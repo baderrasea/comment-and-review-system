@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    /* padding-top: 500px; */
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    text-align: center;
+   
+        width: 100%;
+        max-width: 600px; /* Adjust based on your design */
+        margin: 0 auto;
+        margin-top: 1800px;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Enable vertical scrolling */
+        min-height: 100vh; /* Ensure container takes at least full viewport height */
+    
+    
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.stars input:checked ~ label {
+    color: #007bff;  /* Blue color for selected stars */
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #007bff;  /* Blue color on hover */
+}
+
+.comment-box {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+button {
+    background-color: #0f40be; /* Blue color for the button */
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#result {
+    margin-top: 20px;
+    color: #333;
+}
+
+
+
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.rating {
+    margin-bottom: 15px;
+}
+
+.rating label {
+    font-size: 18px;
+    color: #333;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: #f5c518;
+}
+
+.comment-box {
+    margin-bottom: 15px;
+}
+
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.submit-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button button:hover {
+    background-color: #0056b3;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.review p {
+    margin: 0 0 10px;
+}
+
+.review .rating {
+    font-weight: bold;
+}
+
+.review .comment {
+    margin: 10px 0;
+}
+
+.review .edit-delete {
+    margin-top: 10px;
+}
+
+.review .edit-delete a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.review .edit-delete a:hover {
+    text-decoration: underline;
+}
+
+.review .edit-delete a.delete {
+    color: #dc3545;
+}
+
+.review .edit-delete a.delete:hover {
+    text-decoration: underline;
+}
+
+
+
+h2, h3 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.filters button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.review .rating {
+    font-weight: bold;
+    color: #333;
+}
+
+.review .comment {
+    margin: 10px 0;
+}
+
+.review .edit-delete {
+    margin-top: 10px;
+}
+
+.review .edit-delete a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.review .edit-delete a:hover {
+    text-decoration: underline;
+}
+
+.review .edit-delete a.delete {
+    color: #dc3545;
+}
+
+.review .edit-delete a.delete:hover {
+    text-decoration: underline;
+}
+/* Comment Styles */
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.comment-preview {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.comment-full {
+    display: none;
+}
+
+
